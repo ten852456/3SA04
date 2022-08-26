@@ -1,15 +1,37 @@
-import { Text, View } from 'react-native';
+import {StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-web';
 
 export default function Forecast(props) {
     return (
-    <View >
-    <Text>{props.main}</Text>
-    <Text>{props.description}</Text>
+    <View style={styles.div}>
+    <Text style={styles.main}>{props.main}</Text>
+    <Text style={styles.desc}>{props.description}</Text>
     <View>
-    <Text>{props.temp}</Text>
-    <Text>°C</Text>
+    <Text style={styles.temp}>{props.temp} °C</Text>
     </View>
     </View>
     );
    }
-   
+   const styles = StyleSheet.create({
+    div: {
+    flexDirexction: 'column',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%'
+    },
+    main : {
+        marginTop: 10,
+        marginBottom: 20,
+        fontSize: 24,
+    },
+    desc : {
+        fontSize : 18,
+        marginBottom: 20,
+
+    },
+    temp : {
+        fontSize : 24,
+        fontWeight : 'bold',
+    },
+
+   });
