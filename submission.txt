@@ -1,0 +1,14 @@
+สิ่งที่จัดทำ
+
+App.js
+    เรียกใช้ Screen ผ่าน Stack.Screen 
+ZipCodeScreen.js
+    แสดงผล availableZipItems อีกทั้งยัง routing ค่า code ไปยัง WeatherScreen
+WeatherScreen.js
+    รับค่า code จาก ZipCodeScreen.js และเรียกใช้ component Weather
+Weather.js
+    รับค่า code จาก WeatherScreen.js จากนั้นนำค่า code ไปรับข้อมูลจาก openweathermap เพื่อส่งต่อไปยัง Forecast
+Forecast.js
+    แสดงผลข้อมูลที่ได้จาก Weather.js
+
+นายธนวัฒน์ พละบุญ 6310110191 Sec 03
