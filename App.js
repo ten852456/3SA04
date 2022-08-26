@@ -1,15 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Weather from './components/Weather';
 export default function App() {
  const doIt = () => {
  console.log("Hello from console")
  }
  return (
  <View style={styles.container}>
- <Text onPress={doIt}>Hello world</Text>
- <StatusBar style="auto" />
+ <Weather zipCode="90110"/>
  </View>
+ 
  );
 }
 const styles = StyleSheet.create({
@@ -18,5 +19,6 @@ const styles = StyleSheet.create({
  backgroundColor: '#fff',
  alignItems: 'center',
  justifyContent: 'center',
+ flexDirection: 'column',
  },
 });
