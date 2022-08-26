@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'blue',
         opacity: 0.4,
         width: '100%',
-        height: '23%'
+        height: '25%'
     },
     fonts: {
         marginTop: 10,
